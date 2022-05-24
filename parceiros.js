@@ -11,21 +11,21 @@ var timer_1_1, timer_1_2, timer_1_3, timer_1_4, timer_1_5, timer_1_6,  timer_1_7
 
     sergio = document.createElement ("IMG")
     sergio.id ="sergio"
-    sergio.src ="../imagens/sergio.jpg" 
+    sergio.src ="imagens/sergio.jpg" 
     sergio.style.width ="200"
     sergio.style.height ="200"
     sergio.style.opacity = "0.0" 
     
     sara = document.createElement ("IMG")
     sara.id ="sara"
-    sara.src ="../imagens/sara.jpg" 
+    sara.src ="imagens/sara.jpg" 
     sara.style.width ="200"
     sara.style.height ="200"
     sara.style.opacity = "0.0"   
 
     paula = document.createElement ("IMG")
     paula.id ="paula"
-    paula.src ="../imagens/paula.jpeg" 
+    paula.src ="imagens/paula.jpeg" 
     paula.style.width ="200"
     paula.style.height ="200"
     paula.style.opacity = "0.0"

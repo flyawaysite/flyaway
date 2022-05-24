@@ -14,7 +14,7 @@ function showContentEquipa () {
 
         catarina = document.createElement ("IMG");
         catarina.id ="catarina";
-        catarina.src ="../imagens/catarina.jpeg" ;
+        catarina.src ="imagens/catarina.jpeg" ;
         catarina.style.width ="200";
         catarina.style.height ="200";
         catarina.style.opacity = "0.0";
@@ -23,7 +23,7 @@ function showContentEquipa () {
 
         claudia = document.createElement ("IMG");
         claudia.id ="claudia";
-        claudia.src ="../imagens/claudia.jpeg" ;
+        claudia.src ="imagens/claudia.jpeg" ;
         claudia.style.width ="200";
         claudia.style.height ="200";
         claudia.style.opacity = "0.0";
@@ -32,7 +32,7 @@ function showContentEquipa () {
 
         pedro = document.createElement ("IMG");
         pedro.id ="pedro";
-        pedro.src ="../imagens/pedro.jpeg" ;
+        pedro.src ="imagens/pedro.jpeg" ;
         pedro.style.width ="200";
         pedro.style.height ="200";
         pedro.style.opacity = "0.0";

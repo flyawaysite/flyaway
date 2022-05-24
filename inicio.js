@@ -36,7 +36,7 @@ function showContentInicio() {
     var logofundo
     logofundo = document.createElement("IMG")
     logofundo.id = "logofundo"
-    logofundo.src = "imagens/logo.jpeg"
+    logofundo.src = "/imagens/logo.jpeg"
     logofundo.style.width = "500"
     logofundo.style.height = "500"
     logofundo.style.opacity = "0.0" //opacidade 0 para aumentar depois com a função

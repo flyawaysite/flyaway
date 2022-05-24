@@ -32,7 +32,7 @@ function showContentProjeto() {
 
     larga = document.createElement("IMG");
     larga.id = "larga";
-    larga.src = "../imagens/larga.png";
+    larga.src = "imagens/larga.png";
     document.body.appendChild(larga);
 
     turismo = document.createElement("DIV");
@@ -47,7 +47,7 @@ function showContentProjeto() {
 
     comprido = document.createElement("IMG");
     comprido.id = "comprido";
-    comprido.src = "../imagens/comprido.png";
+    comprido.src = "imagens/comprido.png";
     document.body.appendChild(comprido);
 
 
@@ -75,7 +75,7 @@ function showContentProjeto() {
 
     iceberg = document.createElement("IMG");
     iceberg.id = "iceberg";
-    iceberg.src = "../imagens/iceberg.jpeg";
+    iceberg.src = "imagens/iceberg.jpeg";
     iceberg.style.width = "400";
     iceberg.style.height = "500";
     iceberg.style.opacity = "1";
@@ -83,7 +83,7 @@ function showContentProjeto() {
 
     imagemTurismo = document.createElement("IMG");
     imagemTurismo.id = "imagemTurismo";
-    imagemTurismo.src = "../imagens/imagemTurismo.png";
+    imagemTurismo.src = "imagens/imagemTurismo.png";
     imagemTurismo.height="400"
     imagemTurismo.width="400"
     document.body.appendChild(imagemTurismo);

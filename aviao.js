@@ -129,12 +129,12 @@ function showContentAviao() {
 
   //Carregar imagens
   var img = new Image;
-  img.src = "../mapa2/aviao.png"
+  img.src = "mapa2/aviao.png"
   img.width = '100px'
   img.height = '100px'
 
   var background = new Image();
-  background.src = "../mapa2/map.jpeg"
+  background.src = "mapa2/map.jpeg"
 
   //Carregar canvas
   let ctx = canvas.getContext('2d');
