@@ -14,7 +14,7 @@ function showContentEquipa () {
 
         catarina = document.createElement ("IMG");
         catarina.id ="catarina";
-        catarina.src ="https://flyawaysite.github.io/imagens/flyaway/catarina.jpeg" ;
+        catarina.src ="https://flyawaysite.github.io/flyaway/imagens/catarina.jpeg" ;
         catarina.style.width ="200";
         catarina.style.height ="200";
         catarina.style.opacity = "0.0";
@@ -23,7 +23,7 @@ function showContentEquipa () {
 
         claudia = document.createElement ("IMG");
         claudia.id ="claudia";
-        claudia.src ="https://flyawaysite.github.io/imagens/flyaway/claudia.jpeg" ;
+        claudia.src ="https://flyawaysite.github.io/flyaway/imagens/claudia.jpeg" ;
         claudia.style.width ="200";
         claudia.style.height ="200";
         claudia.style.opacity = "0.0";
@@ -32,7 +32,7 @@ function showContentEquipa () {
 
         pedro = document.createElement ("IMG");
         pedro.id ="pedro";
-        pedro.src ="https://flyawaysite.github.io/imagens/flyaway/pedro.jpeg" ;
+        pedro.src ="https://flyawaysite.github.io/flyaway/imagens/pedro.jpeg" ;
         pedro.style.width ="200";
         pedro.style.height ="200";
         pedro.style.opacity = "0.0";
