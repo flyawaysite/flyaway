@@ -17,7 +17,7 @@ var video1,video2,video3,video4;
         
         logo = document.createElement ("IMG");
         logo.id ="logo";
-        logo.src ="../imagens/logo.png";
+        logo.src ="/imagens/logo.png";
         nav.appendChild(logo);
         logo.addEventListener("mousedown", function() {switchContent("aviao")})
         
