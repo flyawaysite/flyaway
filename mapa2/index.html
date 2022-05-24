@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+</style>
+
+<body>
+  <canvas id="canvas" width="640" height="480"></canvas>
+  <!--https://stackoverflow.com/questions/16792841/detect-if-user-clicks-inside-a-circle-->
+  <p id="demo"></p>
+  <p id="Circle"></p>
+  
+
+
+  <div id="container" onclick="getCoords(event)">
+    <div id="animate"></div>
+  </div>
+  <!--mix-blend-mode: multiply;-->
+  <script>
+    var planePosition = 1;
+    var planePositionNext;
+    function insideCircle(x1,y1) {
+      //Define circle coordinates for every point
+      //var x1 = event.clientX;
+      //var y1 = event.clientY;
+      //coordenadas do meio do circulo
+      var x0 = 360; 
+      var y0 = 420
+      r = 40; //raio do circulo
+      //circle 1 = r= 10px from x0= 50px y0 = 70px | 360 420
+      //funcao para ver se o click pertence ao circulo
+      if (Math.sqrt((x1 - x0) * (x1 - x0) + (y1 - y0) * (y1 - y0)) < r) {
+        document.getElementById("Circle").innerHTML = "Inside!";
+        //planePositionNext = 2;
+        //animationPlane(planePositionNext)
+        //console.log(planePositionNext)
+        return true;
+      } else {
+        document.getElementById("Circle").innerHTML = "Not Inside";
+        return false;
+        //console.log(planePosition)
+      }
+      //Math.sqrt((x1-x0)*(x1-x0) + (y1-y0)*(y1-y0)) < r
+
+    }
+    
+    //https://stackoverflow.com/questions/9762877/html5-js-how-to-animate-straight-line-between-two-coordinates
+    function getCoords(event) {
+      var x = event.clientX;
+      var y = event.clientY;
+      var coords = "X coords: " + x + ", Y coords: " + y;
+      document.getElementById("demo").innerHTML = coords;
+      insideCircle(event)
+    }
+    
+    //https://www.youtube.com/watch?v=yq2au9EfeRQ
+    //animate canvas
+    //https://github.com/mattdesl/blog-posts/blob/master/lerp/02-animate-between-points.js
+    //https://mattdesl.svbtle.com/linear-interpolation
+    //https://www.youtube.com/watch?v=rcz6qvx-igs 10:30
+    //https://stackoverflow.com/questions/6198217/moving-object-from-vector-a-to-b-in-2d-environment-with-in-increments-of-percent
+    
+    //funcao de linear interpolation
+    function lerp(start, end, t) {
+            return start * (1 - t) + end * t;
+    }
+    //registar novos clicks do utilizador
+        window.addEventListener('click', (e)=>{
+            x=e.clientX;
+            y=e.clientY;
+        });
+    //imagens
+    var img = new Image;
+    img.src="aviao.png"
+    img.width = '100px'
+    img.height='100px'
+    //img.style.marginLeft='10px'
+    //img.style.marginTop='30px'
+    var background = new Image();
+    background.src="map.jpeg"
+    
+    //iniciar canvas
+    let canvas = document.getElementById('canvas');
+    let ctx = canvas.getContext('2d');
+    let width=canvas.width=window.innerWidth;
+    let height=canvas.height=window.innerHeight;
+    //let x = width/2;
+    let x = 105;//coordenadas onde o avião inicia
+    let y= 200;//coordenadas onde o avião inicia
+    let planeX = x;
+    //let y = height/2;
+    let planeY=y;
+
+    function moveToDynamic() {
+      //var x = event.clientX;
+      //var y = event.clientY;
+      //function animatePlane() {
+        ctx.clearRect(0,0,width,height) //limpa o canvas
+        if (insideCircle(x,y)==true){
+          planeX = lerp(planeX, x, 0.1)
+          planeY = lerp(planeY, y, 0.1)
+        }
+        ctx.beginPath() //Inicia um caminho, é necessário para o lerp traçar a reta do caminho até ao cursor
+        ctx.drawImage(background,0,0,1000,1000) //carregar imagem de fundo (mapa)
+        ctx.drawImage(img, planeX-50, planeY-50,70,70); //Carregar imagem do aviao
+        //ctx.drawImage(img, 55,150,70,70); //Carregar imagem do aviao
+      
+        //ctx.arc(planeX, planeY, 50, 0, 2 + Math.PI)
+        //ctx.fill()
+        requestAnimationFrame(moveToDynamic)
+      //}
+    }
+    moveToDynamic()
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<canvas id="canvas" width="640" height="480"></canvas>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <script>
+        function lerp(start, end, t) {
+            return start * (1 - t) + end * t;
+    }
+        window.addEventListener('click', (e)=>{
+            x=e.clientX;
+            y=e.clientY;
+        });
+    let canvas = document.getElementById('canvas');
+    let ctx = canvas.getContext('2d');
+    let width=canvas.width=window.innerWidth;
+    let height=canvas.height=window.innerHeight;
+    let x = width/2;
+    let planeX = x;
+    let y = height/2;
+    let planeY=y;
+
+    function moveToDynamic() {
+      //var x = event.clientX;
+      //var y = event.clientY;
+      //function animatePlane() {
+        ctx.clearRect(0,0,width,height)
+        ctx.fillStyle='black'
+        planeX = lerp(planeX, x, 0.1)
+        planeY = lerp(planeY, y, 0.1)
+        ctx.beginPath()
+        ctx.arc(planeX, planeY, 50, 0, 2 + Math.PI)
+        ctx.fill()
+        requestAnimationFrame(moveToDynamic)
+      //}
+    }
+    moveToDynamic()
+</script>
+</body>
+</html>

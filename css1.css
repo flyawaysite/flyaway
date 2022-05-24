@@ -1,0 +1,491 @@
+body {
+    background-color: #DAE8FA;
+    font-family: "roboto";
+}
+
+#logofundo {
+    position: absolute;
+    left: 370px;
+    top: 50px;
+}
+
+#logo {
+    position: relative;
+    left: 560px;
+    top: -35px;
+    width: 150px;
+    height: 150px;
+
+}
+
+#nav {
+
+    z-index: 100;
+    position: fixed;
+    background-color: #DAE8FA;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+
+#menu1 {
+    background-color: #DEB487;
+    width: 230px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 25px;
+    border-radius: 7px;
+
+
+}
+
+#menu2 {
+    background-color: #DEB487;
+    width: 230px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    position: absolute;
+    left: 310px;
+    top: 60px;
+    font-size: 25px;
+    border-radius: 7px;
+}
+
+#menu3 {
+    background-color: #DEB487;
+    width: 230px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    position: absolute;
+    left: 730px;
+    top: 60px;
+    font-size: 25px;
+    border-radius: 7px;
+}
+
+#menu4 {
+    background-color: #DEB487;
+    width: 230px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    position: absolute;
+    left: 1000px;
+    top: 60px;
+    font-size: 25px;
+    border-radius: 7px;
+}
+
+
+
+#titulo {
+    color: #DEB487;
+    position: absolute;
+    left: 500px;
+    top: 130px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+#leg1 {
+    width: 300px;
+    color: #8D8D8F;
+    position: absolute;
+    left: 120px;
+    top: 455px;
+    font-size: 15x;
+    text-align: center;
+
+}
+
+#leg2 {
+    width: 300px;
+    color: #8D8D8F;
+    position: absolute;
+    left: 490px;
+    top: 455px;
+    font-size: 15x;
+    text-align: center;
+}
+
+#leg3 {
+    width: 300px;
+    color: #8D8D8F;
+    position: absolute;
+    left: 860px;
+    top: 455px;
+    font-size: 15x;
+    text-align: center;
+
+}
+
+#catarina {
+    position: absolute;
+    left: 170px;
+    top: 250px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#claudia {
+    position: absolute;
+    left: 540px;
+    top: 250px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#pedro {
+    position: absolute;
+    left: 910px;
+    top: 250px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#texto {
+    width: 600px;
+    position: relative;
+    top: 200px;
+    left: 340px;
+    text-align: justify;
+    color: #8D8D8F;
+
+}
+
+.video {
+    position: absolute;
+    top: 510px;
+    left: 400px;
+}
+
+.video1 {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+#sergio {
+    position: absolute;
+    left: 170px;
+    top: 250px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 50%;
+}
+
+#sara {
+    position: absolute;
+    left: 170px;
+    top: 550px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 50%;
+}
+
+
+#paula {
+    position: absolute;
+    left: 170px;
+    top: 850px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 50%;
+
+}
+
+#legsergio {
+    color: #8D8D8F;
+    position: absolute;
+    left: 220px;
+    top: 460px;
+    font-size: 15x;
+    font-weight: bold;
+
+}
+
+#legsara {
+    color: #8D8D8F;
+    position: absolute;
+    left: 220px;
+    top: 760px;
+    font-size: 15x;
+    font-weight: bold;
+}
+
+#legpaula {
+    color: #8D8D8F;
+    position: absolute;
+    left: 220px;
+    top: 1060px;
+    font-size: 15x;
+    font-weight: bold;
+}
+
+#texto1 {
+
+    color: #8D8D8F;
+    position: absolute;
+    left: 460px;
+    top: 290px;
+    font-size: 20x;
+    text-align: justify;
+    width: 650px;
+
+}
+
+#texto2 {
+
+    color: #8D8D8F;
+    position: absolute;
+    left: 460px;
+    top: 620px;
+    font-size: 20x;
+    text-align: justify;
+    width: 650px;
+}
+
+
+#texto3 {
+    color: #8D8D8F;
+    position: absolute;
+    left: 460px;
+    top: 900px;
+    font-size: 20x;
+    text-align: justify;
+    width: 650px;
+}
+
+
+#headerPopup {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#headerPopup iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#botaox {
+    position: absolute;
+    top: 165px;
+    right: 350px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+    font-size: large;
+}
+
+#botaox:hover {
+    opacity: 1;
+}
+
+#botaox:before, #close:after {
+    position: absolute;
+    left: 15px;
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+#botaox:before {
+    transform: rotate(45deg);
+}
+
+#botaox:after {
+    transform: rotate(-45deg);
+}
+
+#overlay {
+    position: fixed;
+    opacity: 25;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(71, 125, 153, 0.705);
+}
+
+#popup-intro {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 40px;
+    background: white;
+    display: block;
+    overflow: auto;
+}
+
+#popup2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 40px;
+    background: white;
+    display: block;
+    overflow: auto;
+}
+
+#popup3 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 40px;
+    background: white;
+    display: block;
+    overflow: auto;
+}
+
+#popup4 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 40px;
+    background: white;
+    display: block;
+    overflow: auto;
+}
+
+.centrar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#sub1 {
+    color: #DEB487;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+#sub2 {
+    color: #DEB487;
+    position: absolute;
+    top: 750px;
+    left: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#sub3 {
+    color: #DEB487;
+    position: absolute;
+    top: 1370px;
+    left: 100px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#cultura {
+    width: 400px;
+    position: absolute;
+    top: 1570px;
+    left: 150px;
+    text-align: justify;
+    color: #8D8D8F;
+}
+
+#iceberg {
+    position: absolute;
+    top: 1450px;
+    left: 700px;
+}
+
+#iframe {
+    position: absolute;
+    top: 1050px;
+    left: 420px;
+}
+
+#iframeHistoria {
+    position: absolute;
+    top: 250px;
+    left: 210px;
+}
+
+#larga {
+    position: absolute;
+    top: 280px;
+    left: 100px;
+}
+#imagemTurismo{
+    position: absolute;
+    top:310px;
+    left:700;
+}
+
+#comprido {
+    position: absolute;
+    top: 700px;
+    left: 370px;
+}
+#textoRealidade{
+    position: relative;
+    top: 840px;
+    left: 385px;
+    width: 500px;
+    text-align: justify;
+    color: #8D8D8F;
+    font-size: 15px;
+    color: #00008B;
+    font-family: 'Freehand';
+    line-height: 1.2;
+}
+#textoTurismo{
+    position: absolute;
+    top: 365px;
+    left: 230px;
+    width: 350px;
+    text-align: justify;
+    color: #8D8D8F;
+    font-size: 15px;
+    color: #00008B;
+    font-family: 'Freehand';
+    line-height: 1.2;
+}
