@@ -3,8 +3,9 @@ var texto;
 var timer_1_texto;
 var iframeHistoria;
 var type;
-function showContentHistoria() {
 
+function showContentHistoria() {
+    
     document.body.style.backgroundColor = "#FFFFFF";
 
     document.body.appendChild(nav);
@@ -41,7 +42,7 @@ function showContentHistoria() {
     iframeHistoria = document.createElement("DIV")
     iframeHistoria.id = "iframeHistoria"
     //iframeHistoria.className="iframeHistoria"
-    iframeHistoria.innerHTML = "<iframe id='iframeHistoria' width='480' height='270' src='videos/trailer.site.mp4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    iframeHistoria.innerHTML = "<iframe id='iframeHistoria' width='480' height='270' src='videos/trailer.site.mp4' title='YouTube video player' frameborder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     document.body.appendChild(iframeHistoria)
 
     //fazer fade
